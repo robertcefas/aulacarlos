@@ -1,6 +1,6 @@
 import { Link, NavLink } from 'react-router-dom'
 import './style.css'
-import logo from '../../assets./Logotipo.svg'
+import logo from './src/assets/Logotipo.svg'
 
 
 export default function Footer () {
