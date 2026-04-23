@@ -2,6 +2,8 @@ import './style.css'
 
 export default function Home () {
     return (
-        <h1>Bem-Vindo!</h1>
+    <div>
+        <h1>Contabiliadade Simples</h1>
+    </div>
     )
 }
