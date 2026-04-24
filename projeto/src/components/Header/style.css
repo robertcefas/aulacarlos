@@ -1,0 +1,86 @@
+header {
+  display: flex;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 1.2rem 0;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #f0f0f0;
+}
+
+header > div {
+  width: 90%;
+  max-width: 1240px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+header img {
+  height: 70px; /* Logo imponente como solicitado */
+  width: auto;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+header img:hover {
+  transform: scale(1.05);
+}
+
+header span {
+  font-weight: 800;
+  color: #002b5c;
+  font-size: 1.4rem;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+}
+
+nav {
+  display: flex;
+  gap: 2.5rem;
+}
+
+nav a {
+  color: #333;
+  font-weight: 600;
+  font-size: 0.95rem;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #00a859; /* Verde XP/Crescimento */
+}
+
+/* Linha animada abaixo do menu */
+nav a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #00a859;
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* Estilo para link ativo */
+nav a.active {
+  color: #00a859;
+}
+nav a.active::after {
+  width: 100%;
+}
